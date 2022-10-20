@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todoosh</title>
+  </head>
+  <body>
+    <div class="todo-wrapper">
+      <header>
+        <h1>Todoosh</h1>
+      </header>
+      <form class="todo-form">
+        <input type="text" class="task-input" maxlength="28" />
+        <button type="submit" class="task-input-btn"></button>
+        <button class="filter-btn"></button>
+      </form>
+
+      <!-- <p class="uncompleted-tasks-counter-msg">You have 3 uncompleted tasks</p> -->
+
+      <ul class="tasks-container">
+        <!-- <li class="task">
+          <button class="task-status"></button>
+          <span class="task-category category-business"></span>
+          <input type="text" class="task-text" value="Finish the project" maxlength="28" size="28" readonly />
+          <div class="task-btns">
+            <button class="task-edit-btn"></button>
+            <button class="task-delete-btn"></button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <div class="select-category-popup-wrapper">
+      <div class="gray-veil"></div>
+      <div class="select-category-popup">
+        <h3>Please, select a category</h3>
+
+        <div class="select-category-input-wrapper">
+          <input
+            type="radio"
+            name="select-category"
+            id="select-business"
+            value="business"
+            class="select-category-input"
+          />
+          <label
+            for="select-business"
+            class="task-category category-business"
+          ></label>
+        </div>
+
+        <div class="select-category-input-wrapper">
+          <input
+            type="radio"
+            name="select-category"
+            id="select-personal"
+            value="personal"
+            class="select-category-input"
+          />
+          <label
+            for="select-personal"
+            class="task-category category-personal"
+          ></label>
+        </div>
+
+        <div class="select-category-input-wrapper">
+          <input
+            type="radio"
+            name="select-category"
+            id="select-sport"
+            value="sport"
+            class="select-category-input"
+          />
+          <label
+            for="select-sport"
+            class="task-category category-sport"
+          ></label>
+        </div>
+
+        <div class="select-category-input-wrapper">
+          <input
+            type="radio"
+            name="select-category"
+            id="select-hobby"
+            value="hobby"
+            class="select-category-input"
+          />
+          <label
+            for="select-hobby"
+            class="task-category category-hobby"
+          ></label>
+        </div>
+        <button class="select-category-btn">Ok</button>
+      </div>
+    </div>
+
+    <div class="filter-popup-wrapper">
+      <div class="gray-veil"></div>
+      <div class="filter-popup">
+        <h3>Filter</h3>
+        <div class="filter-content-wrapper">
+          <div class="filter-col-left">
+            <p class="filter-category">Category</p>
+
+            <div class="select-category-input-wrapper">
+              <input
+                type="checkbox"
+                name="filter-category"
+                id="filter-all"
+                value="all"
+                class="filter-category-input"
+              />
+              <label for="filter-all" class="filter-category-all">All</label>
+            </div>
+
+            <div class="select-category-input-wrapper">
+              <input
+                type="checkbox"
+                name="filter-category"
+                id="filter-business"
+                value="business"
+                class="filter-category-input"
+              />
+              <label
+                for="filter-business"
+                class="task-category category-business"
+              ></label>
+            </div>
+
+            <div class="select-category-input-wrapper">
+              <input
+                type="checkbox"
+                name="filter-category"
+                id="filter-personal"
+                value="personal"
+                class="filter-category-input"
+              />
+              <label
+                for="filter-personal"
+                class="task-category category-personal"
+              ></label>
+            </div>
+
+            <div class="select-category-input-wrapper">
+              <input
+                type="checkbox"
+                name="filter-category"
+                id="filter-sport"
+                value="sport"
+                class="filter-category-input"
+              />
+              <label
+                for="filter-sport"
+                class="task-category category-sport"
+              ></label>
+            </div>
+
+            <div class="select-category-input-wrapper">
+              <input
+                type="checkbox"
+                name="filter-category"
+                id="filter-hobby"
+                value="hobby"
+                class="filter-category-input"
+              />
+              <label
+                for="filter-hobby"
+                class="task-category category-hobby"
+              ></label>
+            </div>
+          </div>
+          <div class="filter-col-right">
+            <p class="filter-category">State</p>
+            <label>
+              <input
+                type="radio"
+                name="filter-state"
+                class="filter-radio"
+                value="all"
+                checked
+              />
+              All
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="filter-state"
+                class="filter-radio"
+                value="completed"
+              />
+              Completed
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="filter-state"
+                class="filter-radio"
+                value="uncompleted"
+              />
+              Uncompleted
+            </label>
+            <button class="apply-filter-btn">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
