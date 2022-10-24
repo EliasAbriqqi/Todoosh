@@ -16,7 +16,7 @@
   }
 
   .task-input {
-    width: 37rem;
+    width: 94vw;
     height: 5.5rem;
   }
 
@@ -33,7 +33,7 @@
 
   .task {
     margin-bottom: 1.7rem;
-    width: 36rem;
+    width: 94vw;
   }
 
   .task-status,
