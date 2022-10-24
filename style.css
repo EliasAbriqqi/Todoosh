@@ -33,6 +33,7 @@ h1 {
 }
 
 input[type="text"] {
+  appearance: none;
   border: none;
   color: #484848;
 }
