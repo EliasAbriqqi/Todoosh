@@ -35,7 +35,7 @@ const taskMarkup = function (task) {
 <span class="task-category category-${task[0]}"></span>
 <input type="text" class="task-text" value="${
     task[1]
-  }" maxlength="18" size="18" readonly />
+  }" maxlength="16" size="16" readonly />
 <div class="task-btns">
 <button class="task-edit-btn"></button>
 <button class="task-delete-btn"></button>
