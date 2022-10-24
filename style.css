@@ -219,6 +219,8 @@ button {
 
 .gray-veil {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -226,7 +228,7 @@ button {
 }
 
 .select-category-popup {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -240,6 +242,7 @@ button {
 
 .select-category-input-wrapper {
   display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -341,12 +344,4 @@ h3 {
 
 .display-block {
   display: block;
-}
-
-/* S-SCREEN (768px and smaller) */
-
-@media only screen and (max-width: 768px) {
-  :root {
-    font-size: 50%;
-  }
 }
