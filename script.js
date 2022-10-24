@@ -27,6 +27,13 @@ let taskArray = [];
 let selectedCategory;
 let taskChecked = false;
 
+// Mobile version input maxlength
+
+if (window.matchMedia("(max-width: 767px)").matches) {
+  const taskInput = document.querySelector(".task-input");
+  taskInput.maxLength = 16;
+}
+
 // Functions
 
 const taskMarkup = function (task) {
@@ -35,7 +42,7 @@ const taskMarkup = function (task) {
 <span class="task-category category-${task[0]}"></span>
 <input type="text" class="task-text" value="${
     task[1]
-  }" maxlength="16" size="16" readonly />
+  }" maxlength="28" size="28" readonly />
 <div class="task-btns">
 <button class="task-edit-btn"></button>
 <button class="task-delete-btn"></button>
@@ -87,6 +94,12 @@ const renderTask = function () {
       );
       item.classList.remove("task-status");
       item.classList.add("task-status-done");
+    }
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      const taskText = document.querySelector(".task-text");
+      taskText.maxLength = 16;
+      taskText.size = 16;
     }
   });
 };
