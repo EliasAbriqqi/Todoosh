@@ -109,6 +109,7 @@ const showTaskContent = function () {
 
   inputTask.value = "";
   removeSelectPopup();
+  inputTask.blur();
 
   counterNumber.textContent = taskCounter();
 
