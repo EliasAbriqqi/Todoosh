@@ -97,9 +97,11 @@ const renderTask = function () {
     }
 
     if (window.matchMedia("(max-width: 767px)").matches) {
-      const taskText = document.querySelector(".task-text");
-      taskText.maxLength = 16;
-      taskText.size = 16;
+      const taskText = document.querySelectorAll(".task-text");
+      taskText.forEach((task) => {
+        task.maxLength = 16;
+        task.size = 16;
+      });
     }
   });
 };
